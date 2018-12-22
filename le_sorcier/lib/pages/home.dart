@@ -9,12 +9,11 @@ class Home extends StatelessWidget {
         child: Scaffold(
           drawer: Drawer(child: Text("Placedholder for the drawer")),
           appBar: AppBar(
-
               ///Workaround to set a custom icon to drawer
               leading: Builder(
                 builder: (context) => IconButton(
                       icon: new Icon(
-                        Icons.settings,
+                        Icons.supervised_user_circle,
                         color: Colors.white,
                       ),
                       onPressed: () => Scaffold.of(context).openDrawer(),
