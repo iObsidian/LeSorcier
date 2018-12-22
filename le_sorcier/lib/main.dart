@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:le_sorcier/pages/auth.dart';
+import 'package:le_sorcier/pages/home.dart';
 import 'package:le_sorcier/pages/unknown-route.dart';
 
 void main() => runApp(MyApp());
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.yellow,
           buttonColor: Colors.black),
       routes: {
-        '/': (BuildContext context) => AuthPage(), // Home page
+        //'/': (BuildContext context) => AuthPage(), // Home page
+        '/': (BuildContext context) => Home(), // Home page
       },
       onUnknownRoute: (RouteSettings settings) {
         return MaterialPageRoute(
